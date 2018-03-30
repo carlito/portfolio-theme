@@ -26,18 +26,22 @@
   }
 
   &:hover {
+
+    .icon-home {
+      transform: rotate(-90deg);
+    }
+
     #top-left,
     #top-right {
       height: 15px;
     }
 
-    #left,
-    #right {
-      opacity: 0;
+    #left {
+      transform: translate(20px,0px);
     }
 
-    .icon-home {
-      transform: rotate(-90deg);
+    #right {
+      transform: translate(-20px,0px);
     }
 
     #bottom {
@@ -45,10 +49,6 @@
     }
 
     #center {
-      // width: 200%;
-      // transition: width 2s, height 4s;
-      // transform: translate(-10px, 0px);
-      // transform: scale(1.326, 1);
       opacity: 0;
     }
   }
