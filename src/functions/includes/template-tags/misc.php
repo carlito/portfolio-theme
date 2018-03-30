@@ -91,6 +91,18 @@ function the_header_classes( $classes = '', $before = '', $after = '' ) {
 
 
 /**
+ * Display the podcast header image.
+ */
+
+function the_header_image() {
+
+  if( has_header_image() ) {
+    echo '<img class="page-header__image" src="' . get_custom_header()->url . '" height="' . get_custom_header()->height . '" width="' . get_custom_header()->width . '" alt="" />';
+  }
+}
+
+
+/**
  * Display the attributes for #page-main.
  */
 
@@ -123,7 +135,7 @@ function get_logo() {
 function the_logo() {
 
   if( get_logo() ) {
-    echo '<a class="site-logo-link" href="' . get_bloginfo('url') . '" title="' . __('To the home page', 'privatradio') . '"><img class="site-logo" src="' . get_logo() . '" alt="' . get_bloginfo('name') . '"></a>';
+    echo '<a class="site-logo__link" href="' . get_bloginfo('url') . '" title="' . __('To the home page', 'privatradio') . '"><img class="site-logo__image" src="' . get_logo() . '" alt="' . get_bloginfo('name') . '"></a>';
   }
 }
 

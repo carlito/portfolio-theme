@@ -34,6 +34,17 @@
   <?php endif; ?>
 
 
+  <header class="page-header">
+
+    <!-- Custom Logo -->
+    <?php if( is_home() ) { the_logo(); } ?>
+
+    <!-- Header Image -->
+    <?php the_header_image(); ?>
+
+  </header>
+
+
   <div class="page-main">
 
     <?php if ( is_front_page() && is_active_sidebar( 'frontpage_top' ) ) : ?>
