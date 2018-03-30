@@ -21,6 +21,29 @@ function get_image( $options ) {
 
 
 
+/**
+ * Get an inline SVG
+ */
+
+ function get_svg( $filename ) {
+
+  return file_get_contents(get_template_directory()  . '/images/svg/' . $filename . '.svg');
+}
+
+
+
+/**
+ * Display an inline SVG
+ */
+
+function the_svg( $filename ) {
+
+  echo get_svg( $filename );
+}
+
+
+
+
 function get_slider( $options ) {
   echo load_template_part( 'parts/slider', get_post_type() != 'post' ? get_post_type() : get_post_format() );
 }

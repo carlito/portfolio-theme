@@ -37,7 +37,7 @@
     margin-left:-16px;
     margin-top:-16px;
     z-index:11;
-    background:url(../images/loader.gif);
+    background:url(../images/gif/loader.gif);
     display:none;
 }
 .chocolat-content{
@@ -63,7 +63,7 @@
     top: 50%;
     margin-top: -50px;
     cursor:pointer;
-    background:url(../images/left.png) 50% 50% no-repeat;
+    background:url(../images/png/left.png) 50% 50% no-repeat;
     z-index: 17;
     display: none;
 
@@ -76,7 +76,7 @@
     top: 50%;
     margin-top: -50px;
     cursor:pointer;
-    background:url(../images/right.png)  50% 50% no-repeat;
+    background:url(../images/png/right.png)  50% 50% no-repeat;
     z-index: 17;
     display: none;
 }
@@ -104,7 +104,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    background:url(../images/close-circle.svg) 50% 50% no-repeat;
+    background:url(../images/svg/close-circle.svg) 50% 50% no-repeat;
     background-size: 75%;
 }
 .chocolat-wrapper .chocolat-bottom{
@@ -143,7 +143,7 @@
 .chocolat-wrapper .chocolat-fullscreen{
     width: 26px;
     height: 40px;
-    background: url(../images/fullscreen.svg) 50% 50% no-repeat;
+    background: url(../images/svg/fullscreen.svg) 50% 50% no-repeat;
     display: block;
     margin:auto;
     cursor: pointer;

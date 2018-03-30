@@ -6,11 +6,11 @@
 }
 
 @mixin bgsvg($file: false, $repeat: no-repeat, $size: contain, $position: center center) {
-  @include bgimg('#{$file}.svg', $repeat, $size, $position);
+  @include bgimg('svg/#{$file}.svg', $repeat, $size, $position);
 }
 
 @mixin bgicon($file: false, $size: contain, $position: center center) {
-  @include bgimg('icon-#{$file}.svg', no-repeat, $size, $position);
+  @include bgimg('svg/icon-#{$file}.svg', no-repeat, $size, $position);
   text-indent: -999%;
   overflow: hidden;
   display: inline-block;

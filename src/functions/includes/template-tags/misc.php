@@ -315,27 +315,6 @@ function customize_button( $control_id, $style_class = 'regular' ) {
 }
 
 
-/**
- * Get an inline SVG
- */
-
- function get_svg( $filename ) {
-
-  return file_get_contents(get_template_directory()  . '/images/' . $filename . '.svg');
-}
-
-
-
-/**
- * Display an inline SVG
- */
-
-function the_svg( $filename ) {
-
-  echo get_svg( $filename );
-}
-
-
 /*
  * Get posts
  */
