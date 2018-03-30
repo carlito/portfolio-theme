@@ -25,7 +25,9 @@
     transition: all, .1s;
   }
 
-  &:hover {
+  &:focus,
+  &:hover,
+  &:active {
 
     .icon-home {
       transform: rotate(-90deg);
