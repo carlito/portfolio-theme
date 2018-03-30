@@ -1,3 +1,3 @@
 # Imagegrid
 
-A theme for visual portfolios or blogs.
+A minimalistic theme for visual portfolios or blogs.
