@@ -22,8 +22,9 @@
   }
 
   blockquote {
-    padding-left: calc(2em - 4px);
+    padding-left: calc(1.25em - 4px);
     border-left: 4px solid #ccc;
+    margin-left: .75em;
     color: #ccc;
   }
 
@@ -34,6 +35,8 @@
 
     li {
       margin-bottom: .5em;
+      margin-left: -.25em;
+      padding-left: .25em;
     }
   }
 }
