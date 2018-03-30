@@ -1,0 +1,19 @@
+$masonry-gap: 0;
+
+.masonry {
+  column-count: 4;
+  column-gap: $masonry-gap;
+  display: block;
+  box-sizing: border-box;
+}
+
+.masonry__item {
+  // display: inline-block;
+  margin: 0;
+  width: 100%;
+
+  img {
+    vertical-align: top;
+    line-height: 0;
+  }
+}

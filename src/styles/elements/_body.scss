@@ -1,0 +1,7 @@
+body {
+  background-color: #212829;
+
+  &:not(.home):not(.has-featured-image):not(.category) {
+    padding-top: 4em;
+  }
+}

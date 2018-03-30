@@ -1,0 +1,55 @@
+.home-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+  outline: 0;
+
+  .icon-home {
+    width: 100%;
+    height: auto;
+  }
+
+  .icon-home {
+    transition: all, .2s;
+  }
+
+  .text {
+    @extend %hidden;
+  }
+
+
+  rect, polygon {
+    transition: all, .1s;
+  }
+
+  &:hover {
+    #top-left,
+    #top-right {
+      height: 15px;
+    }
+
+    #left,
+    #right {
+      opacity: 0;
+    }
+
+    .icon-home {
+      transform: rotate(-90deg);
+    }
+
+    #bottom {
+      opacity: 0;
+    }
+
+    #center {
+      // width: 200%;
+      // transition: width 2s, height 4s;
+      // transform: translate(-10px, 0px);
+      // transform: scale(1.326, 1);
+      opacity: 0;
+    }
+  }
+}

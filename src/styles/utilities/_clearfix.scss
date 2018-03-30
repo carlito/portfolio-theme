@@ -1,0 +1,22 @@
+
+/// Add clearfix to element with floating children
+/// ---
+/// @author Nicolas Gallagher
+/// @link http://nicolasgallagher.com/micro-clearfix-hack/
+/// ---
+/// @example scss - Usage
+///   selector {
+///     @include clearfix();
+///   }
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}

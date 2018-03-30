@@ -1,0 +1,50 @@
+.navbar {
+  @extend %wrap;
+  text-align: left;
+  padding: 25px 30px;
+  font-size: 1.2em;
+  position: relative;
+  border-bottom: 1px solid #444;
+  // background-color: rgba(#000, .6);
+  display: flex;
+  justify-content: space-between;
+
+  .navbar__title {
+    font-weight: $font-weight-bold;
+    color: #e32118;
+    font-size: 1em;
+    z-index: 2;
+
+    strong {
+      margin-right: .5em;
+    }
+
+    .description {
+      color: #888;
+    }
+  }
+
+  .navbar__title-link {
+    color: #e32118;
+  }
+
+  .button {
+    background-color: #e32118;
+    display: inline-block;
+    padding: .2em .5em;
+    color: #000;
+    font-weight: $font-weight-bold;
+  }
+
+  .right {
+    // position: absolute;
+    // right: 1em;
+    // top: 1em;
+    // padding-right: 240px;
+  }
+
+  select {
+    max-width: 100px;
+    margin-left: 2em;
+  }
+}

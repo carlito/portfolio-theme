@@ -1,0 +1,21 @@
+// The PX to REM mixin
+
+@mixin font-size($px) {
+  font-size: $px;
+  font-size: ($px/$font-size-base) + rem;
+}
+
+@function pxtorem($px) {
+  @return $px/$font-size-base;
+}
+
+
+// Optimize Text
+
+@mixin optimize-text {
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+}

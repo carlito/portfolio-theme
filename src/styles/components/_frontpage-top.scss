@@ -1,0 +1,16 @@
+.frontpage-top {
+  @extend %wrap;
+
+  text-align: left;
+  padding: 60px 30px;
+  color: #888;
+
+  h1 {
+    font-weight: $font-weight-regular;
+    color: #888;
+  }
+
+  strong {
+    color: #ddd;
+  }
+}

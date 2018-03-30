@@ -1,0 +1,49 @@
+{
+  "name": "portfolio",
+  "title": "Portfolio",
+  "description": "A portfolio layout for imagas",
+  "version": "0.0.1",
+  "author": "Sugarman (http://sugarman.tv)",
+  "contributors": [
+    {
+      "name": "Carlos Stockhausen",
+      "email": "c@sugarman.tv"
+    }
+  ],
+  "repository": "git@github.com:USER/REPOSITORY.git",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "babel-preset-latest": "^6.16.0",
+    "browser-sync": "^2.18.5",
+    "del": "^2.2.2",
+    "eslint": "^3.12.0",
+    "eslint-config-airbnb-base": "^11.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-changed": "^1.3.2",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-eslint": "^3.0.1",
+    "gulp-include": "^2.3.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-pug": "^3.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0",
+    "gulp-sass-glob": "^1.0.8",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "minimist": "^1.2.0",
+    "run-sequence": "^1.2.2"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "chocolat": "^0.4.19",
+    "gulp-include-template": "^0.2.3",
+    "gulp-phplint": "^0.5.1",
+    "jquery": "^3.3.1",
+    "pug-php-filter": "0.0.1",
+    "slick-carousel": "^1.8.1"
+  }
+}

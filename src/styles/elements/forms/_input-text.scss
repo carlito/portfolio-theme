@@ -1,0 +1,35 @@
+$forms-border-width: 3px;
+$forms-transition-speed: .2s;
+
+%input {
+  transition: all, $forms-transition-speed;
+  background-color: transparent;
+  color: #999;
+  border: $forms-border-width solid #333;
+  border-radius: 0;
+  padding: .5em;
+
+  &:focus {
+    border: $forms-border-width solid #888;
+    color: #fff;
+  }
+}
+
+%input-text,
+input[type="text"] {
+  @extend %input;
+}
+
+%input-textarea,
+textarea {
+  @extend %input;
+}
+
+%input-error {
+  border: $forms-border-width solid $color-primary;
+}
+
+%input-error-label {
+  padding-top: .25em;
+  font-size: .8em;
+}

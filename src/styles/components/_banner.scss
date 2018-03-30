@@ -1,0 +1,24 @@
+.banner {
+  background-color: rgba(#000, .9);
+  color: #888;
+  padding: 2em;
+
+  h2 {
+    font-size: 1.2em;
+    color: #fff;
+  }
+
+  a {
+    color: currentColor;
+    text-decoration: underline;
+
+    &:link,
+    &:visited {
+      color: currentColor;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

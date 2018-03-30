@@ -1,0 +1,131 @@
+$grid-item-spacing:       30px;
+$grid-item-bgcolor:       rgba(#212829, .9);
+$grid-item-textcolor:     #fff;
+$grid-item-border-radius: 2px;
+
+.imagegrid {
+  list-style: none;
+  padding: ($grid-item-spacing/2);
+}
+
+.imagegrid__item {
+  border-radius: ($grid-item-spacing/2 + $grid-item-border-radius);
+  border: ($grid-item-spacing/2) solid transparent;
+  display: block;
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+
+  .overlay {
+    align-items: center;
+    background-color: rgba(#000, .4);
+    bottom: 0;
+    color: $grid-item-textcolor;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    transition: all .2s;
+    width: 100%;
+
+    .title {
+      transition: all .2s;
+      font-size: 1em; // 1.2em
+      font-weight: $font-weight-bold;
+      line-height: 110%;
+      max-width: 60%;
+      padding: 1em 1.5em;
+    }
+  }
+
+  .has-post-thumbnail {
+
+    .imagegrid__link {
+      min-height: auto;
+
+      .title {
+        background-color: #e32118;
+        color: #000;
+      }
+    }
+
+    .overlay {
+      opacity: 0;
+      background-color: $grid-item-bgcolor;
+    }
+  }
+}
+
+.imagegrid__link {
+  cursor: pointer;
+  display: block;
+  min-height: 379px;
+
+  &:link,
+  &:visited {
+    color: $grid-item-textcolor;
+  }
+
+  &:hover {
+    .imagegrid__image {
+      transform: scale(1.25);
+      height: auto;
+      // opacity: .8;
+    }
+    .overlay {
+      opacity: 1;
+    }
+    .title {
+      transform: scale(1.15);
+      height: auto;
+
+      background-color: #e32118;
+      color: #000;
+    }
+  }
+}
+
+.imagegrid__image {
+  display: block;
+  transition: transform .2s;
+  width: 100%;
+  height: auto;
+}
+
+
+@include media-above('md') {
+
+  .imagegrid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: top;
+    align-items:flex-start;
+    align-content:flex-start;
+  }
+
+  .imagegrid__item {
+    width: 50%;
+  }
+}
+
+@include media-above('xl') {
+
+  .imagegrid__item {
+    width: 33.333%;
+  }
+
+  // .imagegrid__item:has(> .post.sticky) {
+  //   width: 66.666%;
+  // }
+
+  .width-2 {
+    width: 66.666%;
+  }
+
+  .full-width,
+  .width-3 {
+    width: 100%;
+  }
+}

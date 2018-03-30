@@ -1,0 +1,12 @@
+<svg class="icon-home" width="50px" height="45px" viewBox="0 0 50 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g class="group" fill="#FFFFFF">
+    <rect id="bottom" x="0" y="36.4130435" width="49.6956522" height="8.15217391"></rect>
+    <polygon id="top-left" points="3.39239006 11.9793792 25 0 25 10.9473362 8.44581913 20.2648198"></polygon>
+    <polygon id="top-left" transform="translate(35.803805, 10.132410) scale(-1, 1) translate(-35.803805, -10.132410) " points="25 11.9793792 46.6076099 0 46.6076099 11.0485908 30.0534291 20.2648198"></polygon>
+    <rect id="center" x="20.1086957" y="24.4565217" width="8.69565217" height="13.5869565"></rect>
+    <polygon id="left" points="0 13.7941003 8.69565217 8.98174119 8.69565217 38.0434783 0 38.0434783"></polygon>
+    <polygon id="left" points="0 13.8123591 8.69565217 9 8.69565217 38.0617371 0 38.0617371"></polygon>
+    <polygon id="left" transform="translate(45.347826, 23.481135) scale(-1, 1) translate(-45.347826, -23.481135) " points="41 13.6559354 49.6956522 8.90053305 49.6956522 38.0617371 41 38.0617371"></polygon>
+  </g>
+
+</svg>

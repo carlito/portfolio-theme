@@ -1,0 +1,28 @@
+mixin grid
+  ul.image-grid
+    block
+
+mixin grid-item(item)
+  li.image-grid__item(class=item.classes)
+    if item.link
+      a.image-grid__link(href=item.link, title=item.title, class=item.linkClasses)
+        +grid-item-content(item)
+    else
+      +grid-item-content(item)
+
+mixin grid-item-content(item)
+  +grid-item-image({src:item.image, alt: item.title, classes: item.imageClasses})
+  if item.title
+    +grid-item-overlay(item.title)   
+
+mixin grid-item-image(image)
+  img.image-grid__image(src=image.src, alt=image.alt, class=image.classes)
+
+mixin grid-item-overlay(title)
+  .overlay
+    h2.title= title
+
+
+mixin lightbox(e)
+  .lightbox(data-chocolate-title=e.title)
+    block

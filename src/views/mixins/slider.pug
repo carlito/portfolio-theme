@@ -1,0 +1,10 @@
+mixin slider
+  div.slider
+    block
+
+mixin slider-item(item)
+  div
+    +slider-image(item)
+    
+mixin slider-image(image)
+  img(src=image.src, alt=image.alt)

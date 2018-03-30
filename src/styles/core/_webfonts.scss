@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Inter UI';
+  font-style:  normal;
+  font-weight: 400;
+  src: url("../build/fonts/interface-regular.woff2") format("woff2"),
+       url("../build/fonts/interface-regular.woff") format("woff");
+}
+@font-face {
+  font-family: 'Inter UI';
+  font-style:  italic;
+  font-weight: 400;
+  src: url("../build/fonts/interface-italic.woff2") format("woff2"),
+       url("../build/fonts/interface-italic.woff") format("woff");
+}
+@font-face {
+  font-family: 'Inter UI';
+  font-style:  normal;
+  font-weight: 900;
+  src: url("../build/fonts/interface-black.woff2") format("woff2"),
+       url("../build/fonts/interface-black.woff") format("woff");
+}
+@font-face {
+  font-family: 'Inter UI';
+  font-style:  italic;
+  font-weight: 900;
+  src: url("../build/fonts/interface-blackitalic.woff2") format("woff2"),
+       url("../build/fonts/interface-blackitalic.woff") format("woff");
+}

@@ -1,0 +1,25 @@
+@mixin bgimg($file: false, $repeat: no-repeat, $size: 100%, $position: center center) {
+  background-image: url(./images/#{$file});
+  background-repeat: $repeat;
+  background-size: $size;
+  background-position: $position;
+}
+
+@mixin bgsvg($file: false, $repeat: no-repeat, $size: contain, $position: center center) {
+  @include bgimg('#{$file}.svg', $repeat, $size, $position);
+}
+
+@mixin bgicon($file: false, $size: contain, $position: center center) {
+  @include bgimg('icon-#{$file}.svg', no-repeat, $size, $position);
+  text-indent: -999%;
+  overflow: hidden;
+  display: inline-block;
+}
+
+@mixin icon {
+  display: inline-block;
+
+  .text {
+    display: none;
+  }
+}

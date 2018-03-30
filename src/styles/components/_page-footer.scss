@@ -1,0 +1,29 @@
+.page-footer {
+  background-color: rgba(#000, .2);
+  padding: 40px;
+  text-align: center;
+
+  ul {
+    list-style: none;
+  }
+
+  #sidebar {
+    @extend %wrap;
+  }
+
+  .imprint {
+    font-size: .7em;
+    color: #444;
+  }
+}
+
+body:not(.home):not(.has-featured-image):not(.category) .page-footer {
+  background-color: transparent;
+  text-align: left;
+
+  .imprint {
+    @extend %wrap;
+    max-width: 900px;
+    padding-left: 20px;
+  }
+}

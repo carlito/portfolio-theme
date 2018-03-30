@@ -1,0 +1,31 @@
+
+div.wpforms-container-full .wpforms-form input[type="text"],
+div.wpforms-container-full .wpforms-form input[type="email"] {
+  @extend %input-text;
+  font-size: 1.2em;
+  height: auto;
+}
+
+div.wpforms-container-full .wpforms-form textarea {
+  @extend %input-textarea;
+  font-size: 1.2em;
+  font-family: inherit;
+}
+
+div.wpforms-container-full .wpforms-form label.wpforms-error {
+  color: #fff;
+  font-size: 1em;
+}
+
+div.wpforms-container-full .wpforms-form button[type="submit"] {
+  @extend %button;
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-field input.wpforms-error {
+  @extend %input-error;
+}
+
+
+div.wpforms-container-full .wpforms-form label.wpforms-error {
+  @extend %input-error-label;
+}

@@ -1,0 +1,45 @@
+.searchform {
+  margin-top: 2em;
+}
+
+.searchform-label {
+  display: none;
+}
+
+.searchform-input {
+}
+
+.searchform-submit {
+  @extend %button;
+}
+
+
+
+.searchform--big {
+
+  .searchform-input {
+    @extend %input-text;
+    font-size: 1.4em;
+    margin-right: 1em;
+  }
+
+  .searchform-submit {
+    // @extend %button--big;
+    left: -7px;
+    line-height: 158%;
+    padding: 11px 25px;
+    position: relative;
+
+    @include media-below('md') {
+      left: 0;
+      top: -2px;
+    }
+  }
+
+  @include media-below('md') {
+    .searchform-input,
+    .searchform-submit {
+      width: 100%;
+    }
+  }
+}

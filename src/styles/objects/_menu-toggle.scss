@@ -1,0 +1,38 @@
+.menu-toggle,
+.menu-toggle-label {
+  @include no-select;
+  display: inline-block;
+}
+
+.menu-toggle-label {
+  @include no-select;
+  // @include hamburger(rgba(#111, .3), #111);
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  padding: .5em 1em;
+  position: absolute;
+  top: .9em;
+  right: .5em;
+  font-weight: $font-weight-bold;
+  z-index: 2;
+
+  @include media-above('md') {
+    display: none;
+  }
+}
+
+.menu-toggle {
+  display: none;
+}
+
+@include media-below('md') {
+  .menu-toggle + .menu {
+    right: -100%;
+  }
+
+  .menu-toggle:checked + .menu {
+    @include no-select;
+    right: 0;
+  }
+}

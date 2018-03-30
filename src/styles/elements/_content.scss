@@ -1,0 +1,39 @@
+%content {
+  color: #999;
+
+  h1, h2, h3, h4, h5, h6,
+  strong {
+    color: #ccc;
+  }
+
+  a {
+    color: #999;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    transition: all, .2s;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  blockquote {
+    padding-left: calc(2em - 4px);
+    border-left: 4px solid #ccc;
+    color: #ccc;
+  }
+
+  ul, ol {
+    padding-left: 2em;
+    margin-bottom: 1em;
+    color: #ccc;
+
+    li {
+      margin-bottom: .5em;
+    }
+  }
+}

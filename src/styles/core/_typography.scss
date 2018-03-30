@@ -1,0 +1,45 @@
+html {
+  // 1 REM
+  // font-size: 10px;
+}
+
+body {
+  color: #fff;
+
+  font-family: 'Inter UI';
+  font-weight: $font-weight-regular;
+  @include font-size($font-size-base);
+}
+
+strong {
+  font-weight: $font-weight-bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $font-weight-bold;
+  line-height: 140%;
+  color: #ddd;
+}
+
+h1,
+%h1 {
+  font-size: 42px;
+  line-height: 140%;
+  margin: 0 0 .5em 0;
+}
+
+h2,
+%h2 {
+  font-size: 1.25em;
+  line-height: 160%;
+}
+
+
+/* Fix for superscript breaking line height */
+
+sup {
+  vertical-align: top;
+  font-size: 0.6em;
+  position: relative;
+  top: -0.5em;
+}

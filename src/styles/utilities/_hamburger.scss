@@ -1,0 +1,27 @@
+@mixin hamburger($default: #ccc, $active: #000) {
+  position: relative;
+  padding-left: 1.25em;
+
+  &:before {
+    // @include font-size(18px);
+    background: $default;
+    content: "";
+    height: 0.2em;
+    left: 0;
+    position: absolute;
+    transition: all, 0.2s;
+    width: 1.6em;
+    box-shadow:
+      0 0.4em 0 0 $default,
+      0 0.8em 0 0 $default;
+  }
+
+  &:hover {
+    &:before {
+      background: $active;
+      box-shadow:
+        0 0.4em 0 0 $active,
+        0 0.8em 0 0 $active;
+    }
+  }
+}

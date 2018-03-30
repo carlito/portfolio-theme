@@ -1,0 +1,14 @@
+@mixin links {
+  a:link,
+  a:visited {
+    @content;
+  }
+}
+
+@mixin links-active {
+  a:focus,
+  a:hover,
+  a:active {
+    @content;
+  }
+}

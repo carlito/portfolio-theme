@@ -1,0 +1,101 @@
+extends /extends/layout
+include /mixins/grid
+include /mixins/slider
+include /mixins/banner
+
+block variables
+  - var title = "Artist Name";
+  - var description = "Subtitle";
+
+block content
+  .page-header
+    h1 <strong>#{title}</strong> <span class="description">#{description}</span>
+    
+    .button.right Kontakt
+
+  .page-main
+    
+    +slider
+      +grid-item({
+        image:   "https://picsum.photos/1200/392?image=64", 
+        link:    "https://picsum.photos/1200/600?image=64",
+        title:   "Auf dem Lande", 
+        classes: "full-width lightbox",
+        linkClasses: "chocolat-image"
+      })
+      +grid-item({
+        image:   "https://picsum.photos/1200/392?image=134", 
+        link:    "https://picsum.photos/1200/600?image=134",
+        title:   "Another Slide", 
+        classes: "full-width lightbox",
+        linkClasses: "chocolat-image"
+      })
+      +grid-item({
+        image:   "https://picsum.photos/1200/392?image=814", 
+        link:    "https://picsum.photos/1200/600?image=814", 
+        title:   "Auf dem Lande", 
+        classes: "full-width lightbox",
+        linkClasses: "chocolat-image"
+      })
+      +grid-item({
+        image:   "https://picsum.photos/1200/392?image=344", 
+        link:    "https://picsum.photos/1200/600?image=344", 
+        title:   "Another Slide", 
+        classes: "full-width lightbox",
+        linkClasses: "chocolat-image"
+      })
+      
+    +grid  
+      +grid-item({
+        image:   "https://picsum.photos/400/400?image=236",
+        link:    "https://picsum.photos/1000/1000?image=236",
+        title:   "A random picture",
+        classes: "lightbox",
+        linkClasses: "chocolat-image"
+      })
+      +grid-item({
+        image:   "https://picsum.photos/400/400?image=223",
+        link:    "http://localhost:3000/",
+        title:   "Another fine random picture"
+      })   
+      +grid-item({
+        image:   "https://picsum.photos/400/400?image=873"
+      })       
+
+    +grid  
+      +grid-item({
+        image:   "https://picsum.photos/800/400?image=136",
+        link:    "http://localhost:3000/",
+        title:   "A pretty cool project",
+        classes: "width-2"
+      })
+      +grid-item({
+        image:   "https://picsum.photos/400/400?image=1000"
+      })  
+  
+    +banner
+      h2 Need illustrations or drawings?
+      p <a href="">Send a mail</a> for licensing or other inquiries.
+          
+        
+    +grid  
+      +grid-item({
+        image:   "https://picsum.photos/400/400?image=16",
+        link:    "http://localhost:3000/",
+        title:   "Oh dear"
+      })
+      +grid-item({
+        image:   "https://picsum.photos/400/400?image=243",
+        link:    "http://localhost:3000/",
+        title:   "A Horse is a Horse"
+      })   
+      +grid-item({
+        image:   "https://picsum.photos/400/400?image=473",
+        link:    "http://localhost:3000/",
+        title:   "One more title and this one is really long"
+      })      
+
+    +banner
+      h2 Need a website?
+      p <a href="">Send a mail</a> for project inquiries.
+        
