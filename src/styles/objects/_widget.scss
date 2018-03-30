@@ -1,0 +1,24 @@
+// .widget {
+//   margin-bottom: 40px;
+// }
+
+// Search form
+
+.widget {
+  @extend %content;
+
+  .widget-title {
+    margin-bottom: 20px;
+  }
+
+  .searchform {
+    .screen-reader-text {
+      @extend %hidden;
+    }
+    #s {
+      padding: 12px 10px;
+      position: relative;
+      top: -1px;
+    }
+  }
+}
