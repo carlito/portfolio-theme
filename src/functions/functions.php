@@ -10,7 +10,8 @@ $includes = [
   'helper',
   'template-tags',
   'shortcodes',
-  'misc'
+  'misc',
+  'customization'
 ];
 
 foreach ($includes as $file) {
