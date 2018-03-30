@@ -9,6 +9,5 @@
 // require_once 'customization/custom-color-header-text.php';
 // require_once 'customization/custom-navigation-bar.php';
 // require_once 'customization/custom-announcement.php';
-// require_once 'customization/custom-episodes.php';
 // require_once 'customization/custom-lists.php';
 // require_once 'customization/custom-posts.php';
