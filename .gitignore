@@ -1,7 +1,7 @@
 build
 node_modules
 
-/views
+/src/views
 /re-gulpfile.js
 
 .DS_Store
