@@ -36,11 +36,13 @@
 
   <header class="page-header">
 
-    <!-- Custom Logo -->
-    <?php if( is_home() ) { the_logo(); } ?>
-
-    <!-- Header Image -->
-    <?php the_header_image(); ?>
+    <div class="wrap">
+      <!-- Custom Logo -->
+      <?php if( is_home() ) { the_logo(); } ?>
+      
+      <!-- Header Image -->
+      <?php the_header_image(); ?>
+    </div>
 
   </header>
 
