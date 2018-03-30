@@ -11,7 +11,8 @@ $includes = [
   'template-tags',
   'shortcodes',
   'misc',
-  'customization'
+  'customization',
+  'admin'
 ];
 
 foreach ($includes as $file) {
