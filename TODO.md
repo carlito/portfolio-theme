@@ -1,5 +1,6 @@
 # To do
 
+- Font sizes
 - Multiple post images
 - Multiple image formats via srcset?
 - Slider
