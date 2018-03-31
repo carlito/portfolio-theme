@@ -269,7 +269,7 @@ gulp.task('styles', () => gulp
   // Save unminified file
   .pipe(gulp.dest(`${path.build}`))
   // Optimize and minify
-  .pipe(nano())
+  // .pipe(nano())
   // Append suffix
   // .pipe(rename({
   //   suffix: '.min',
