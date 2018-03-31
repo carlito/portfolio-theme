@@ -1,7 +1,7 @@
 <div class="navbar">
   <div class="navbar__title">
     <a href="<?php echo site_url() ?>" title="Home" class="navbar__title-link ">
-      <strong><?php bloginfo('name', 'display') ?></strong>
+      <strong class="title"><?php bloginfo('name', 'display') ?></strong>
       <span class="description"><?php bloginfo('description', 'display') ?></span>
     </a>
   </div>

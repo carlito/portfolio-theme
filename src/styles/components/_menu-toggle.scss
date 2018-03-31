@@ -26,13 +26,49 @@
   display: none;
 }
 
+// Toggle
+
 @include media-below('md') {
   .menu-toggle + .menu {
-    right: -100%;
+    top: -100%;
   }
 
   .menu-toggle:checked + .menu {
     @include no-select;
-    right: 0;
+    top: 0;
+
+    a:link,
+    a:visited {
+      color: #fff;
+    }
+  }
+
+  // Overlay
+  // body:after {
+  //   background-color: rgba(color(primary), 1);
+  //   content: ' ';
+  //   // height: 0;
+  //   left: 0;
+  //   position: absolute;
+  //   right: 0;
+  //   top: 0;
+  //   transition: .2s, all;
+  // }
+  // .menu-active {
+  //   &:after {
+  //     bottom: 0;
+  //   }
+  // }
+
+  // Active mobile-menu
+  .menu-active {
+    overflow: hidden;
+
+    .main-menu {
+      overflow: scroll;
+    }
+  }
+  .menu-active .navbar__title-link {
+    color: #111;
   }
 }

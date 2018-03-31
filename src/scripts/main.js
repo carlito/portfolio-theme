@@ -1,5 +1,17 @@
 jQuery(function($) {
 
+  var menuToggle = $('#menu-toggle');
+
+  menuToggle.change(function () {
+    if(menuToggle.is(':checked')) {
+      $('body').addClass('menu-active');
+    } else {
+      $('body').removeClass('menu-active');
+    }
+  });
+
+
+
   // $('.slider').slick({
   //   // autoplay: true,
   //   // adaptiveHeight: true,

@@ -17,14 +17,15 @@
   a:link,
   a:visited {
     transition: color, .2s;
-    color: color(text);
+    // color: color(text);
+    color: #fff;
     font-weight: font-weight(bold);
   }
 
   a:focus,
   a:hover,
   a:active {
-    color: #fff;
+    color: color(primary);
   }
 }
 
@@ -35,15 +36,15 @@
     .menu {
       transition: all, .2s;
       position: fixed;
-      right: -100%;
+      right: 0;
       top: 0;
-      background-color: #000;
+      background-color: color(primary);
       padding: 4em 1em 2em;
       z-index: 1;
       width: 100%;
     }
 
-    a {
+    @include links {
       display: block;
       padding: .15em .5em;
       font-size: 1.5em;
