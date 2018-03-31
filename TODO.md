@@ -27,7 +27,8 @@
 
 # Issues
 
-- Loop post limit isn't working
+- Home Button in Safari
+- Loop post limit isn't working?
 - Imagegrid: Posts without images
 - Imagegrid: Image formats
 
