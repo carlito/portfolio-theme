@@ -11,7 +11,7 @@
 
 <ul class="imagegrid">
 <?php while(have_posts()) : the_post(); ?>
-  <li class="imagegrid__item">
+  <li class="imagegrid__item<?php if(is_sticky()){ echo ' is-sticky'; } ?>">
     <?php get_template_part( 'parts/post' ); ?>
   </li>
 <?php endwhile; ?>

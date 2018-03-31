@@ -9,6 +9,20 @@ function the_featured_image($format, $array) {
 }
 
 
+function the_featured_image_thumb() {
+
+  // $image_format = (is_sticky()) ? 'grid-large-sticky' : 'grid-large';
+
+  the_post_thumbnail(
+    'grid-large',
+    array(
+      'class' => 'imagegrid__image'
+    )
+  );
+}
+
+
+
 function get_image( $options ) {
 
   // Vermutlich muss Post ID übergeben werden
