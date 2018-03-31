@@ -7,7 +7,6 @@
   - Template tag
   - Shortcode
 - Imagegrid
-  - Fix posts without images
   - Format options
   - Masonry option
   - Image sizes
@@ -17,16 +16,20 @@
 - Single Image: Image size
   - Template tag
   - Shortcode
-
 - 2nd level main menu
 - Comments
 - Sharing
-
 - Customization
 - Theme Options
 - Move generic functionality to plugins
-
 - Banner
+
+
+# Issues
+
+- Loop post limit isn't working
+- Imagegrid: Posts without images
+- Imagegrid: Image formats
 
 
 # Wishlist
