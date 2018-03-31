@@ -5,12 +5,6 @@
   background-color: #212829;
   margin-bottom: 1em;
   overflow-x: hidden; // Prevent horizontal overflow with fiull-size images in %content
-
-  img {
-    @extend %wrap;
-    width: 100%;
-    height: auto;
-  }
 }
 
 .single-post__text {

@@ -1,14 +1,18 @@
 .featured-image {
   margin-bottom: 2em;
   position: relative;
+
+  img {
+    @extend %wrap;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .featured-image__caption {
   @extend %wrap;
-  text-align: left;
+  @extend %image-caption;
   max-width: 890px;
   padding: 1em 5em 1em 1em;
-  color: #666;
-  line-height: 140%;
-  font-size: .9em;
+  text-align: left;
 }
