@@ -1,3 +1,23 @@
+@function font-size($key) {
+  @if map-has-key($font-sizes, $key) {
+    @return map-get($font-sizes, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $font-sizes.";
+  @return null;
+}
+
+@function font-weight($key) {
+  @if map-has-key($font-weights, $key) {
+    @return map-get($font-weights, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $font-weights.";
+  @return null;
+}
+
+
+
 // The PX to REM mixin
 
 @mixin font-size($px) {

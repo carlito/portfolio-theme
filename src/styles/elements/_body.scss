@@ -9,7 +9,7 @@ body {
   color: #fff;
 
   font-family: 'Inter UI';
-  font-weight: $font-weight-regular;
+  font-weight: font-weight(regular);
   @include font-size($font-size-base);
 
   background-color: #212829;

@@ -14,7 +14,7 @@
   position: absolute;
   top: .9em;
   right: .5em;
-  font-weight: $font-weight-bold;
+  font-weight: font-weight(bold);
   z-index: 2;
 
   @include media-above('md') {

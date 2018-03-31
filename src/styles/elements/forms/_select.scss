@@ -10,7 +10,7 @@ select {
   background-color: #000;
   color: #888;
   font-size: .8em;
-  font-weight: $font-weight-bold;
+  font-weight: font-weight(bold);
   cursor: pointer;
 
   &:focus,
