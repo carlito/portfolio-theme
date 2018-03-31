@@ -3,18 +3,18 @@
   font-size: 28px;
   display: flex;
   margin-bottom: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .pagination__link {
+  @extend %button;
   box-sizing: border-box;
-  border: 0;
-  color: rgba($color-text, .25);
   display: block;
-  flex-grow: 1;
-  padding: 30px;
+  flex-grow: 0;
   text-align: center;
   text-decoration: none;
-  width: 48%;
 
   .text {
     display: none;
@@ -27,12 +27,5 @@
   .icon {
     position: relative;
     top: 3px;
-  }
-
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: rgba(#000, .1);
-    color: rgba($color-text, .5);
   }
 }
