@@ -7,6 +7,7 @@
   - Shortcode
 - Imagegrid
   - Fix posts without images
+  - Format options
   - Masonry option
   - Image sizes
   - Template tag
