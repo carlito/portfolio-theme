@@ -12,7 +12,7 @@ body {
   font-weight: font-weight(regular);
   @include font-size($font-size-base);
 
-  background-color: #212829;
+  background-color: color(bg);
 
   &:not(.home):not(.has-featured-image):not(.category) {
     padding-top: 4em;

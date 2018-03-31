@@ -5,7 +5,7 @@
  */
 
 add_theme_support( 'custom-background', array(
-	'default-color'          => '#f2f2f2',
+	'default-color'          => '#212829',
 	'default-image'          => '',
 	'default-repeat'         => 'no-repeat',
 	'default-position-x'     => 'center',
