@@ -36,7 +36,7 @@
   }
 
   @include links-active {
-    color: #fff;
+    color: color(primary);
   }
 
   @include inline-lists;

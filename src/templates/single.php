@@ -14,9 +14,9 @@
     <div class="featured-image">
       <?php the_post_thumbnail( 'fullsize', array('class' => '') ); ?>
       <?php if (get_post(get_post_thumbnail_id())->post_excerpt) { ?>
-          <div class="featured-image__caption">
-              <?php echo wp_kses_post(get_post(get_post_thumbnail_id())->post_excerpt); // displays the image caption ?>
-          </div>
+        <div class="featured-image__caption">
+          <?php echo wp_kses_post(get_post(get_post_thumbnail_id())->post_excerpt); // displays the image caption ?>
+        </div>
       <?php } ?>
     </div>
 
@@ -35,10 +35,14 @@
         <p class="publishing-date">
           <?php printf( __( 'Published on %s', 'imagegrid' ), get_the_date() ); ?>
         </p>
-        <!-- Categories -->
-        <?php if(has_category()) { the_category(', '); } ?>
         <!-- Tags -->
-        <?php the_tags('<div class="tags"><span class="label">Tags</span> ', '', '</div>'); ?>
+        <?php the_tags('<div class="tags"><span class="label">Tags:</span> ', ', ', '</div>'); ?>
+        <!-- Categories -->
+        <?php if(has_category()): ?>
+          <div class="categories">
+            <?php the_category(); ?>
+          </div>
+        <?php endif; ?>
       </div>
       <?php endif; ?>
 
