@@ -1,4 +1,17 @@
 body {
+  position: relative;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-rendering: optimizeSpeed;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+
+  color: #fff;
+
+  font-family: 'Inter UI';
+  font-weight: $font-weight-regular;
+  @include font-size($font-size-base);
+
   background-color: #212829;
 
   &:not(.home):not(.has-featured-image):not(.category) {

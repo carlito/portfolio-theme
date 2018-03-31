@@ -1,0 +1,13 @@
+strong {
+  font-weight: $font-weight-bold;
+}
+
+
+/* Fix for superscript breaking line height */
+
+sup {
+  vertical-align: top;
+  font-size: 0.6em;
+  position: relative;
+  top: -0.5em;
+}
