@@ -47,4 +47,8 @@
   <?php endwhile; ?>
 </div>
 
+<div class="single-post__bottom">
+  <a class="button large" href="<?php echo site_url() ?>">More</a>
+</div>
+
 <?php get_template_part( 'parts/footer' ); ?>
