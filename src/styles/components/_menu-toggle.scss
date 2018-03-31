@@ -8,6 +8,7 @@
   @include no-select;
   // @include hamburger(rgba(#111, .3), #111);
   cursor: pointer;
+  color: color(text-light);
   display: inline-block;
   overflow: hidden;
   padding: .5em 1em;
@@ -31,6 +32,7 @@
 @include media-below('md') {
   .menu-toggle + .menu {
     top: -100%;
+    box-shadow: 0 0 60px rgba(#000, .8);
   }
 
   .menu-toggle:checked + .menu {
@@ -39,7 +41,7 @@
 
     a:link,
     a:visited {
-      color: #fff;
+      color: color(text-light);
     }
   }
 

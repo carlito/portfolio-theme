@@ -16,13 +16,6 @@
     font-weight: font-weight(bold);
   }
 
-  .right {
-    // position: absolute;
-    // right: 1em;
-    // top: 1em;
-    // padding-right: 240px;
-  }
-
   select {
     max-width: 100px;
     margin-left: 2em;
@@ -52,8 +45,6 @@
   }
 }
 
-
-
 .navbar__title-link {
-  color: #e32118;
+  color: color(primary);
 }

@@ -17,8 +17,7 @@
   a:link,
   a:visited {
     transition: color, .2s;
-    // color: color(text);
-    color: #ccc;
+    color: color(text-light);
     font-weight: font-weight(bold);
   }
 

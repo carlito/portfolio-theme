@@ -6,8 +6,9 @@
 /// @prop {String} colors.red [#e32118] - Red
 
 $colors: (
-  bg:       #212829,
-  text:     #999,
-  red:      #e32118,
-  primary:  #e32118
+  bg:         #212829,
+  text:       #999,
+  text-light: rgba(#fff, .8),
+  red:        #e32118,
+  primary:    #e32118
 );
