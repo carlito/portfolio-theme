@@ -1,6 +1,6 @@
 <?php
 
-namespace Pr\Shortcodes;
+namespace Ig\Shortcodes;
 
 
 function shortcode_slider( $atts ){

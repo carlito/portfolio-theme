@@ -389,11 +389,11 @@ function get_posts_list( $args = array(), $show_doubles = true ) {
 
   // Loop
   if ( $query->have_posts() ) {
-    $output .= '<ul class="posts-list style-' . $args['style'] . '">';
+    $output .= '<ul class="imagegrid style-' . $args['style'] . '">';
     while ( $query->have_posts() ) : $query->the_post();
       if ( $show_doubles || ! in_array( get_the_ID(), $displayed_posts )) {
-        $output .= '<li class="list-item">';
-        $output .= load_template_part( TEMPLATES_DIR . 'parts/post', get_post_type() != 'post' ? get_post_type() : get_post_format() );
+        $output .= '<li class="imagegrid__item">';
+        $output .= load_template_part( 'parts/post', get_post_type() != 'post' ? get_post_type() : get_post_format() );
         $output .= '</li>';
         $displayed_posts[] = get_the_ID();
       }
