@@ -39,4 +39,20 @@
       padding-left: .25em;
     }
   }
+
+
+  // Images
+
+  .wp-caption {
+    margin: 60px 0;
+  }
+
+  .size-full {
+    @include media-above('lg') {
+      width: 140%;
+      height: auto;
+      position: relative;
+      left: -20%;
+    }
+  }
 }

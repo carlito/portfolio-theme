@@ -4,6 +4,7 @@
   text-align: center;
   background-color: #212829;
   margin-bottom: 1em;
+  overflow-x: hidden; // Prevent horizontal overflow with fiull-size images in %content
 
   img {
     @extend %wrap;
