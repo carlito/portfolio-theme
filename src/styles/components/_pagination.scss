@@ -1,0 +1,38 @@
+.pagination {
+  // @include font-size(28px);
+  font-size: 28px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.pagination__link {
+  box-sizing: border-box;
+  border: 0;
+  color: rgba($color-text, .25);
+  display: block;
+  flex-grow: 1;
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  width: 48%;
+
+  .text {
+    display: none;
+
+    @include media-above('md') {
+      display: inline;
+    }
+  }
+
+  .icon {
+    position: relative;
+    top: 3px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: rgba(#000, .1);
+    color: rgba($color-text, .5);
+  }
+}

@@ -3,6 +3,7 @@
 $includes = [
   'setup',
   'scripts',
+  'output',
   'menus',
   'widgets',
   'widget-areas',

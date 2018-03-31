@@ -22,3 +22,5 @@
   <?php get_template_part( 'parts/404' ); ?>
 </div>
 <?php endif; ?>
+
+<?php get_template_part( 'parts/pagination' ); ?>
