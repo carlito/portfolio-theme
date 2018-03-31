@@ -13,9 +13,11 @@ Tags:
 
 
 // Utilities
+// (Mixins and functions)
 @import "utilities/**/*";
 
 // Settings
+// (Global site settings)
 @import "settings/*";
 
 // Core
@@ -23,13 +25,11 @@ Tags:
 @import "core/webfonts";
 
 // Elements
+// (Generic HTML elements)
 @import "elements/**/*";
 
-// Objects
-@import "objects/**/*";
-
-// Libraries
-@import "libraries/**/*";
+// Layout
+@import "layout/**/*";
 
 // Components
 @import "components/**/*.scss";

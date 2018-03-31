@@ -10,7 +10,7 @@ function theme_init() {
     wp_enqueue_script('jquery');
 
     // Scripts
-    wp_register_script( 'scripts', get_bloginfo('template_directory') . '/scripts/main.min.js');
+    wp_register_script( 'scripts', get_bloginfo('template_directory') . '/scripts/main.js');
     wp_enqueue_script( 'scripts' );
 
     // Localize
