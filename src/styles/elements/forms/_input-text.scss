@@ -4,7 +4,7 @@ $forms-transition-speed: .2s;
 %input {
   transition: all, $forms-transition-speed;
   background-color: transparent;
-  color: #999;
+  color: color(text);
   border: $forms-border-width solid #333;
   border-radius: 0;
   padding: .5em;
@@ -26,7 +26,7 @@ textarea {
 }
 
 %input-error {
-  border: $forms-border-width solid $color-primary;
+  border: $forms-border-width solid color(primary);
 }
 
 %input-error-label {

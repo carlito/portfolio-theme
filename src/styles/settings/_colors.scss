@@ -6,9 +6,7 @@
 /// @prop {String} colors.red [#e32118] - Red
 
 $colors: (
-  "red": #e32118,
-  "primary": #e32118
+  red:      #e32118,
+  primary:  #e32118,
+  text:     #999
 );
-
-$color-primary: #e32118;
-$color-text: #888;

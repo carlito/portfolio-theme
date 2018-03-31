@@ -1,5 +1,5 @@
 %content {
-  color: #999;
+  color: color(text);
 
   h1, h2, h3, h4, h5, h6,
   strong {
@@ -7,13 +7,13 @@
   }
 
   a {
-    color: #999;
+    color: color(text);
     text-decoration: underline;
     text-decoration-style: dotted;
     transition: all, .2s;
 
     &:hover {
-      color: $color-primary;
+      color: color(primary);
     }
   }
 
