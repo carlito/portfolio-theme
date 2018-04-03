@@ -11,7 +11,10 @@ $includes = [
   'helper',
   'template-tags',
   'shortcodes',
+  'editor',
   'misc',
+  // 'metabox',
+  'custom-fields',
   'customization',
   'admin'
 ];
