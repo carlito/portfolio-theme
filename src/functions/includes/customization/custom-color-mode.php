@@ -1,6 +1,6 @@
 <?php
 
-namespace Pr\Customization;
+namespace Ig\Customization;
 
 
 /**
@@ -15,23 +15,23 @@ function color_mode( $wp_customize ) {
 
   $wp_customize->add_setting( 'color_mode', array(
       'capability'  => 'edit_theme_options',
-      'default'     => 'Light',
+      'default'     => 'dark',
       'type'        => 'option',
     )
   );
 
   $wp_customize->add_control( 'color_mode',
     array(
-      'label'     => __( 'Color Mode', 'privatradio' ),
+      'label'     => __( 'Color Mode', 'imagegrid' ),
       'section'   => 'colors',
       'settings'  => 'color_mode',
       'type'      => 'select',
       'priority'  => 1,
       'choices'   => array(
-        'light'  => __( 'Light', 'privatradio' ),
-        'dark'   => __( 'Dark',  'privatradio' ),
+        'light'  => __( 'Light', 'imagegrid' ),
+        'dark'   => __( 'Dark',  'imagegrid' ),
       ),
-      'description' => __('Choose a color mode', 'privatradio')
+      'description' => __('Choose a color mode', 'imagegrid')
     )
   );
 }

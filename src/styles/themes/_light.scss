@@ -1,0 +1,12 @@
+.color-mode--light {
+  background-color: #f2f2f2;
+}
+
+.main-menu {
+  @include links {
+    color: #888;
+  }
+  @include links-active {
+    color: color(primary);
+  }
+}
